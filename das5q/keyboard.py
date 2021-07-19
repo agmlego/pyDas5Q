@@ -4,6 +4,9 @@
 import hid
 
 from .packets import PACKET_LENGTH, AckPacket, Packet
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 class KeyboardNotFoundError(Exception):
@@ -54,6 +57,8 @@ class Keyboard:
             the sequence number used for the write
 
         '''
+        logger.debug(
+            f'Writing packet to keyboard (seq={self._sequence}): {data!r}')
         data = bytes(data)
         # inject sequence number into the fourth byte
         data = data[:3] + bytes([self._sequence]) + data[4:]
@@ -64,7 +69,11 @@ class Keyboard:
 
     def _read(self) -> tuple[Packet, int]:
         '''Read data from device.'''
-        return Packet.parse(self._hid_device.get_feature_report(0, PACKET_LENGTH))
+        response = Packet.parse(
+            self._hid_device.get_feature_report(0, PACKET_LENGTH))
+        packet, seq = response
+        logger.debug(f'Got packet (seq={seq}) from keyboard: {packet!r}')
+        return response
 
     def make_request(self, data: Packet):
         '''Make a request with device.
@@ -77,7 +86,6 @@ class Keyboard:
         '''
         seq = self._write(data)
         response = self._read()
-        print(response)
         ack, ack_seq = response
         assert ack_seq == seq
         assert isinstance(ack, AckPacket)
