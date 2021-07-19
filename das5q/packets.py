@@ -2,6 +2,11 @@
 # SPDX-License-Identifier: FAFOL
 
 import struct
+from typing import Dict, Sequence
+
+PACKET_LENGTH = 65
+
+TYPES = {}
 
 
 class Packet:
@@ -9,7 +14,7 @@ class Packet:
 
     type = 0x00
     fields = []
-    headerformat = '<xxcx'
+    headerformat = '<xxBx'
     format = ''
 
     def __init__(self, **kwargs):
@@ -17,15 +22,42 @@ class Packet:
             assert name in self.fields
             setattr(self, name, value)
 
+    def __init_subclass__(cls):
+        '''Build up a dictionary of packet types'''
+        if cls.type not in TYPES:
+            TYPES[cls.type] = cls
+        else:
+            # if there are collisions, use the command value as a subkey
+            if not isinstance(TYPES[cls.type], dict):
+                other = TYPES[cls.type]
+                TYPES[cls.type] = {}
+                TYPES[cls.type][other.command] = other
+
+            TYPES[cls.type][cls.command] = cls
+
     def __bytes__(self):
-        return struct.pack(
+        message = struct.pack(
             self.headerformat + self.format,
             self.type,
             *[getattr(self, field) for field in self.fields]
         )
+        assert len(message) <= PACKET_LENGTH
+        return message.ljust(PACKET_LENGTH, b'\x00')
 
     def __repr__(self):
         return f'<{type(self).__name__} type={self.type:02X}: {" ".join([f"{field}={getattr(self,field)}" for field in self.fields])}>'
+
+    @staticmethod
+    def parse(packet_data: bytes) -> 'Packet':
+        '''Figure out what type of packet this is, and return an object of that type.'''
+        packettype, = struct.unpack(Packet.headerformat, packet_data[:4])
+        if isinstance(TYPES[packettype], dict):
+            # there are collisions, use the command value as a subkey
+            packet = TYPES[packettype][packet_data[len(Packet.headerformat)]]
+        else:
+            packet = TYPES[packettype]
+        fields = struct.unpack(packet.format, packet_data[4:])
+        return packet(**dict(zip(packet.fields, fields)))
 
 
 class InitializePacket(Packet):
@@ -42,7 +74,7 @@ class InitializePacket(Packet):
     ])
 
 
-class FirmwareVersionPacket(Packet):
+class FirmwareRequestPacket(Packet):
     '''Request keyboard firmware version.'''
 
     type = 0x11
@@ -56,12 +88,27 @@ class FirmwareVersionPacket(Packet):
     ])
 
 
+class FirmwareVersionPacket(Packet):
+    '''Reply containing firmware version.'''
+
+    type = 0x15
+    fields = ['major', 'minor', 'patch', 'build']
+    format = '4B'
+    major = 0
+    minor = 0
+    patch = 0
+    build = 0
+
+    def __str__(self):
+        return f'{self.major}.{self.minor}.{self.patch}.{self.build}'
+
+
 class FreezeEffectsPacket(Packet):
     '''Freeze effects on keyboard.'''
 
     type = 0x2D
     fields = ['command', 'mystery']
-    format = 'c28s'
+    format = 'B28s'
     command = 0x07
     mystery = bytes([0xFF]*28)
 
@@ -71,7 +118,7 @@ class TriggerPacket(Packet):
 
     type = 0x2D
     fields = ['command', 'mystery']
-    format = 'c28s'
+    format = 'B28s'
     command = 0x0F
     mystery = bytes([0xFF]*28)
 
@@ -81,7 +128,7 @@ class BrightnessPacket(Packet):
 
     type = 0x2B
     fields = ['brightness']
-    format = 'c'
+    format = 'B'
     brightness = 0
 
     def __init__(self, **kwargs):
@@ -112,7 +159,7 @@ class StatePacket(Packet):
         'mystery_2',
         'effect_flag',
     ]
-    format = '4c13H'
+    format = '4B13H'
 
     color_channel_id = 0
     mystery_1 = 1
@@ -134,6 +181,11 @@ class StatePacket(Packet):
 
     def __init__(self, *, effect_flag: 'EffectFlag', **kwargs):
         super().__init__(effect_flag=effect_flag, **kwargs)
+
+
+class AckPacket(Packet):
+    type = 0x14
+    fields = []
 
 
 class EffectFlag:
