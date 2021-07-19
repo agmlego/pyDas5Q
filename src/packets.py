@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# SPDX-License-Identifier: FAFOL
+
 import struct
 
 
