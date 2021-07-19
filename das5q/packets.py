@@ -2,7 +2,6 @@
 # SPDX-License-Identifier: FAFOL
 
 import struct
-from typing import Dict, Sequence
 
 PACKET_LENGTH = 65
 
@@ -14,7 +13,7 @@ class Packet:
 
     type = 0x00
     fields = []
-    headerformat = '<xxBx'
+    headerformat = '<xxBB'
     format = ''
 
     def __init__(self, **kwargs):
@@ -39,25 +38,35 @@ class Packet:
         message = struct.pack(
             self.headerformat + self.format,
             self.type,
+            0x00,   # sequence is always 0 at this point; other things will reassign as needed
             *[getattr(self, field) for field in self.fields]
         )
         assert len(message) <= PACKET_LENGTH
         return message.ljust(PACKET_LENGTH, b'\x00')
 
     def __repr__(self):
-        return f'<{type(self).__name__} type={self.type:02X}: {" ".join([f"{field}={getattr(self,field)}" for field in self.fields])}>'
+        str = f'<{type(self).__name__} type={self.type:02X}'
+        if len(self.fields) > 0:
+            str += f': {" ".join([f"{field}={getattr(self,field)}" for field in self.fields])}>'
+        else:
+            str += '>'
+        return str
 
     @staticmethod
-    def parse(packet_data: bytes) -> 'Packet':
+    def parse(packet_data: bytes) -> tuple['Packet', int]:
         '''Figure out what type of packet this is, and return an object of that type.'''
-        packettype, = struct.unpack(Packet.headerformat, packet_data[:4])
+        packettype, sequence = struct.unpack(
+            Packet.headerformat, packet_data[:4])
+
         if isinstance(TYPES[packettype], dict):
             # there are collisions, use the command value as a subkey
             packet = TYPES[packettype][packet_data[len(Packet.headerformat)]]
         else:
             packet = TYPES[packettype]
-        fields = struct.unpack(packet.format, packet_data[4:])
-        return packet(**dict(zip(packet.fields, fields)))
+        expected_size = struct.calcsize('<'+packet.format)
+        fields = struct.unpack(
+            '<'+packet.format, packet_data[4:4+expected_size])
+        return (packet(**dict(zip(packet.fields, fields))), sequence)
 
 
 class InitializePacket(Packet):
