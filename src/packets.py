@@ -25,7 +25,7 @@ class Packet:
         )
 
     def __repr__(self):
-        return f'<{type(self).__name__} type={self.type:02X} {" ".join([f"{field}={getattr(self,field)}" for field in self.fields])}>'
+        return f'<{type(self).__name__} type={self.type:02X}: {" ".join([f"{field}={getattr(self,field)}" for field in self.fields])}>'
 
 
 class InitializePacket(Packet):
@@ -117,7 +117,7 @@ class StatePacket(Packet):
     color_channel_id = 0
     mystery_1 = 1
     key = 151
-    effect_id = 0x02  # TODO: maybe make this an Enum; options are 0x00 or 0x02
+    effect_id = 0x02  # TODO: maybe make self an Enum options are 0x00 or 0x02
     up_max_level = 0
     up_increment = 0
     up_increment_delay = 0
@@ -131,3 +131,45 @@ class StatePacket(Packet):
     start_delay = 0
     mystery_2 = 0
     # TODO: effect_flag has no default???
+
+    def __init__(self, *, effect_flag: 'EffectFlag', **kwargs):
+        super().__init__(effect_flag=effect_flag, **kwargs)
+
+
+class EffectFlag:
+    '''Effect flag definition.'''
+
+    value = 1
+    incrementOnly = 0x01
+    decrementOnly = 0x02
+    incrementDecrement = 0x19
+    decrementIncrement = 0x1A
+    triggerLaterMask = 0x4000
+    transitionMask = 0x1000
+
+    def setIncrementDecrement(self):
+        self.value = self.incrementDecrement
+
+    def setDecrementIncrement(self):
+        self.value = self.decrementIncrement
+
+    def setIncrementOnly(self):
+        self.value = self.incrementOnly
+
+    def setDecrementOnly(self):
+        self.value = self.decrementOnly
+
+    def setTriggerEffectOnApply(self):
+        self.value = self.value | self.triggerLaterMask
+
+    def setTriggerEffectNow(self):
+        self.value = self.value & ~self.triggerLaterMask
+
+    def setEnableTransition(self):
+        self.value = self.value & ~self.transitionMask
+
+    def setDisableTransition(self):
+        self.value = self.value | self.transitionMask
+
+    def __index__(self):
+        return self.value
