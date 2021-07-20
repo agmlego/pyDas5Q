@@ -1,0 +1,1507 @@
+{
+    "0": {
+        "description": "0",
+        "leds": [
+            59
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 42.8,
+            "top": 20.25,
+            "width": 4.28
+        },
+        "short_name": "0"
+    },
+    "1": {
+        "description": "1",
+        "leds": [
+            50
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 4.28,
+            "top": 20.25,
+            "width": 4.28
+        },
+        "short_name": "1"
+    },
+    "2": {
+        "description": "2",
+        "leds": [
+            51
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 8.56,
+            "top": 20.25,
+            "width": 4.28
+        },
+        "short_name": "2"
+    },
+    "3": {
+        "description": "3",
+        "leds": [
+            52
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 12.84,
+            "top": 20.25,
+            "width": 4.28
+        },
+        "short_name": "3"
+    },
+    "4": {
+        "description": "4",
+        "leds": [
+            53
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 17.12,
+            "top": 20.25,
+            "width": 4.28
+        },
+        "short_name": "4"
+    },
+    "5": {
+        "description": "5",
+        "leds": [
+            54
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 21.4,
+            "top": 20.25,
+            "width": 4.28
+        },
+        "short_name": "5"
+    },
+    "6": {
+        "description": "6",
+        "leds": [
+            55
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 25.68,
+            "top": 20.25,
+            "width": 4.28
+        },
+        "short_name": "6"
+    },
+    "7": {
+        "description": "7",
+        "leds": [
+            56
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 29.96,
+            "top": 20.25,
+            "width": 4.28
+        },
+        "short_name": "7"
+    },
+    "8": {
+        "description": "8",
+        "leds": [
+            57
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 34.24,
+            "top": 20.25,
+            "width": 4.28
+        },
+        "short_name": "8"
+    },
+    "9": {
+        "description": "9",
+        "leds": [
+            58
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 38.52,
+            "top": 20.25,
+            "width": 4.28
+        },
+        "short_name": "9"
+    },
+    "-": {
+        "description": "dash",
+        "leds": [
+            60
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 47.08,
+            "top": 20.25,
+            "width": 4.28
+        },
+        "short_name": "-"
+    },
+    ",": {
+        "description": "comma",
+        "leds": [
+            130
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 39.59,
+            "top": 61.75,
+            "width": 4.28
+        },
+        "short_name": ","
+    },
+    ";": {
+        "description": "semiColon",
+        "leds": [
+            108
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 46.01,
+            "top": 47.25,
+            "width": 4.28
+        },
+        "short_name": ";"
+    },
+    ".": {
+        "description": "period",
+        "leds": [
+            131
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 43.87,
+            "top": 61.75,
+            "width": 4.28
+        },
+        "short_name": "."
+    },
+    "'": {
+        "description": "singleQuote",
+        "leds": [
+            109
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 50.29,
+            "top": 47.25,
+            "width": 4.28
+        },
+        "short_name": "'"
+    },
+    "[": {
+        "description": "openBracket",
+        "leds": [
+            84
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 49.22,
+            "top": 33.75,
+            "width": 4.28
+        },
+        "short_name": "["
+    },
+    "]": {
+        "description": "closeBracket",
+        "leds": [
+            85
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 53.5,
+            "top": 33.75,
+            "width": 4.28
+        },
+        "short_name": "]"
+    },
+    "/": {
+        "description": "forwardSlash",
+        "leds": [
+            132
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 48.15,
+            "top": 61.75,
+            "width": 4.28
+        },
+        "short_name": "/"
+    },
+    "\\": {
+        "description": "backSlash",
+        "leds": [
+            87
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 57.78,
+            "top": 33.75,
+            "width": 6.42
+        },
+        "short_name": "\\"
+    },
+    "`": {
+        "description": "backTick",
+        "leds": [
+            49
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 0,
+            "top": 20.25,
+            "width": 4.28
+        },
+        "short_name": "`"
+    },
+    "←": {
+        "description": "leftArrow",
+        "leds": [
+            160
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 65.27,
+            "top": 75.25,
+            "width": 4.28
+        },
+        "short_name": "←"
+    },
+    "→": {
+        "description": "rightArrow",
+        "leds": [
+            162
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 73.83,
+            "top": 75.25,
+            "width": 4.28
+        },
+        "short_name": "→"
+    },
+    "↑": {
+        "description": "upArrow",
+        "leds": [
+            137
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 69.55,
+            "top": 61.75,
+            "width": 4.28
+        },
+        "short_name": "↑"
+    },
+    "↓": {
+        "description": "downArrow",
+        "leds": [
+            161
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 69.55,
+            "top": 75.25,
+            "width": 4.28
+        },
+        "short_name": "↓"
+    },
+    "↹": {
+        "description": "tab",
+        "leds": [
+            73
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 0,
+            "top": 33.75,
+            "width": 6.42
+        },
+        "short_name": "↹"
+    },
+    "⇧-L": {
+        "description": "shiftLeft",
+        "leds": [
+            121
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 0,
+            "top": 61.75,
+            "width": 9.63
+        },
+        "short_name": "⇧-L"
+    },
+    "⇧-R": {
+        "description": "shiftRight",
+        "leds": [
+            134,
+            135
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 52.43,
+            "top": 61.75,
+            "width": 11.77
+        },
+        "short_name": "⇧-R"
+    },
+    "⇪": {
+        "description": "Caps Lock",
+        "leds": [
+            97
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 0,
+            "top": 47.25,
+            "width": 7.49
+        },
+        "short_name": "⇪"
+    },
+    "⇭": {
+        "description": "Num Lock",
+        "leds": [
+            67
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 79.18,
+            "top": 20.25,
+            "width": 4.28
+        },
+        "short_name": "⇭"
+    },
+    "+": {
+        "description": "add",
+        "leds": [
+            94
+        ],
+        "rectangle": {
+            "height": 27,
+            "left": 92.32,
+            "top": 33.75,
+            "width": 4.28
+        },
+        "short_name": "+"
+    },
+    "=": {
+        "description": "equalSign",
+        "leds": [
+            61
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 51.36,
+            "top": 20.25,
+            "width": 4.28
+        },
+        "short_name": "="
+    },
+    "|-L": {
+        "description": "leftPipe",
+        "leds": [
+            0,
+            24,
+            48,
+            72,
+            96,
+            120,
+            144,
+            168,
+            192
+        ],
+        "rectangle": {
+            "height": 54,
+            "left": -1.0272,
+            "top": 27,
+            "width": 0
+        },
+        "short_name": "|-L"
+    },
+    "|-R": {
+        "description": "rightPipe",
+        "leds": [
+            71,
+            95,
+            119,
+            143,
+            167,
+            191,
+            215
+        ],
+        "rectangle": {
+            "height": 54,
+            "left": 97.7552,
+            "top": 27,
+            "width": 0
+        },
+        "short_name": "|-R"
+    },
+    "⌤": {
+        "description": "enter",
+        "leds": [
+            166
+        ],
+        "rectangle": {
+            "height": 27,
+            "left": 92.32,
+            "top": 61.75,
+            "width": 4.28
+        },
+        "short_name": "⌤"
+    },
+    "⌫": {
+        "description": "backspace",
+        "leds": [
+            63
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 55.64,
+            "top": 20.25,
+            "width": 8.56
+        },
+        "short_name": "⌫"
+    },
+    "⏎": {
+        "description": "return",
+        "leds": [
+            110,
+            111
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 54.57,
+            "top": 47.25,
+            "width": 9.63
+        },
+        "short_name": "⏎"
+    },
+    "▤": {
+        "description": "rightMenuKey",
+        "leds": [
+            157
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 53.37404572,
+            "top": 75.25,
+            "width": 5.50285714408
+        },
+        "short_name": "▤"
+    },
+    "❖": {
+        "description": "leftMetaKey",
+        "leds": [
+            146
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 5.502857144,
+            "top": 75.25,
+            "width": 5.07485714408
+        },
+        "short_name": "❖"
+    },
+    "⤓": {
+        "description": "Scroll Lock",
+        "leds": [
+            41
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 69.55,
+            "top": 0,
+            "width": 4.28
+        },
+        "short_name": "⤓"
+    },
+    "A": {
+        "description": "a",
+        "leds": [
+            99
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 7.49,
+            "top": 47.25,
+            "width": 4.28
+        },
+        "short_name": "A"
+    },
+    "ALT-L": {
+        "description": "altLeft",
+        "leds": [
+            147
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 11.00571431,
+            "top": 75.25,
+            "width": 4.94645714408
+        },
+        "short_name": "ALT-L"
+    },
+    "ALT-R": {
+        "description": "altRight",
+        "leds": [
+            155
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 42.80611428,
+            "top": 75.25,
+            "width": 5.49001714408
+        },
+        "short_name": "ALT-R"
+    },
+    "B": {
+        "description": "b",
+        "leds": [
+            127
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 26.75,
+            "top": 61.75,
+            "width": 4.28
+        },
+        "short_name": "B"
+    },
+    "C": {
+        "description": "c",
+        "leds": [
+            125
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 18.19,
+            "top": 61.75,
+            "width": 4.28
+        },
+        "short_name": "C"
+    },
+    "CTRL-L": {
+        "description": "ctrlLeft",
+        "leds": [
+            145
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 0,
+            "top": 75.25,
+            "width": 5.50285714408
+        },
+        "short_name": "CTRL-L"
+    },
+    "CTRL-R": {
+        "description": "ctrlRight",
+        "leds": [
+            159
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 58.80628286,
+            "top": 75.25,
+            "width": 5.5028571398
+        },
+        "short_name": "CTRL-R"
+    },
+    "D": {
+        "description": "d",
+        "leds": [
+            101
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 16.05,
+            "top": 47.25,
+            "width": 4.28
+        },
+        "short_name": "D"
+    },
+    "DEL": {
+        "description": "delete",
+        "leds": [
+            88
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 65.27,
+            "top": 33.75,
+            "width": 4.28
+        },
+        "short_name": "DEL"
+    },
+    "E": {
+        "description": "e",
+        "leds": [
+            76
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 14.98,
+            "top": 33.75,
+            "width": 4.28
+        },
+        "short_name": "E"
+    },
+    "END": {
+        "description": "end",
+        "leds": [
+            89
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 69.55,
+            "top": 33.75,
+            "width": 4.28
+        },
+        "short_name": "END"
+    },
+    "ESC": {
+        "description": "escape",
+        "leds": [
+            25
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 0,
+            "top": 0,
+            "width": 4.28
+        },
+        "short_name": "ESC"
+    },
+    "F": {
+        "description": "f",
+        "leds": [
+            102
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 20.33,
+            "top": 47.25,
+            "width": 4.28
+        },
+        "short_name": "F"
+    },
+    "F1": {
+        "description": "f1",
+        "leds": [
+            27
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 8.56,
+            "top": 0,
+            "width": 4.28
+        },
+        "short_name": "F1"
+    },
+    "F2": {
+        "description": "f2",
+        "leds": [
+            28
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 12.84,
+            "top": 0,
+            "width": 4.28
+        },
+        "short_name": "F2"
+    },
+    "F3": {
+        "description": "f3",
+        "leds": [
+            29
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 17.12,
+            "top": 0,
+            "width": 4.28
+        },
+        "short_name": "F3"
+    },
+    "F4": {
+        "description": "f4",
+        "leds": [
+            30
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 21.4,
+            "top": 0,
+            "width": 4.28
+        },
+        "short_name": "F4"
+    },
+    "F5": {
+        "description": "f5",
+        "leds": [
+            32
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 27.82,
+            "top": 0,
+            "width": 4.28
+        },
+        "short_name": "F5"
+    },
+    "F6": {
+        "description": "f6",
+        "leds": [
+            33
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 32.1,
+            "top": 0,
+            "width": 4.28
+        },
+        "short_name": "F6"
+    },
+    "F7": {
+        "description": "f7",
+        "leds": [
+            34
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 36.38,
+            "top": 0,
+            "width": 4.28
+        },
+        "short_name": "F7"
+    },
+    "F8": {
+        "description": "f8",
+        "leds": [
+            35
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 40.66,
+            "top": 0,
+            "width": 4.28
+        },
+        "short_name": "F8"
+    },
+    "F9": {
+        "description": "f9",
+        "leds": [
+            36
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 47.08,
+            "top": 0,
+            "width": 4.28
+        },
+        "short_name": "F9"
+    },
+    "F10": {
+        "description": "f10",
+        "leds": [
+            37
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 51.36,
+            "top": 0,
+            "width": 4.28
+        },
+        "short_name": "F10"
+    },
+    "F11": {
+        "description": "f11",
+        "leds": [
+            38
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 55.64,
+            "top": 0,
+            "width": 4.28
+        },
+        "short_name": "F11"
+    },
+    "F12": {
+        "description": "f12",
+        "leds": [
+            39
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 59.92,
+            "top": 0,
+            "width": 4.28
+        },
+        "short_name": "F12"
+    },
+    "FN": {
+        "description": "select",
+        "leds": [
+            156
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 48.03382857,
+            "top": 75.25,
+            "width": 5.50285714408
+        },
+        "short_name": "FN"
+    },
+    "G": {
+        "description": "g",
+        "leds": [
+            103
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 24.61,
+            "top": 47.25,
+            "width": 4.28
+        },
+        "short_name": "G"
+    },
+    "H": {
+        "description": "h",
+        "leds": [
+            104
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 28.89,
+            "top": 47.25,
+            "width": 4.28
+        },
+        "short_name": "H"
+    },
+    "HOME": {
+        "description": "home",
+        "leds": [
+            65
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 69.55,
+            "top": 20.25,
+            "width": 4.28
+        },
+        "short_name": "HOME"
+    },
+    "I": {
+        "description": "i",
+        "leds": [
+            81
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 36.38,
+            "top": 33.75,
+            "width": 4.28
+        },
+        "short_name": "I"
+    },
+    "INS": {
+        "description": "insert",
+        "leds": [
+            64
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 65.27,
+            "top": 20.25,
+            "width": 4.28
+        },
+        "short_name": "INS"
+    },
+    "J": {
+        "description": "j",
+        "leds": [
+            105
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 33.17,
+            "top": 47.25,
+            "width": 4.28
+        },
+        "short_name": "J"
+    },
+    "K": {
+        "description": "k",
+        "leds": [
+            106
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 37.45,
+            "top": 47.25,
+            "width": 4.28
+        },
+        "short_name": "K"
+    },
+    "L": {
+        "description": "l",
+        "leds": [
+            107
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 41.73,
+            "top": 47.25,
+            "width": 4.28
+        },
+        "short_name": "L"
+    },
+    "LED-⇪": {
+        "description": "Caps Lock Light",
+        "leds": [
+            16
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 71.69,
+            "top": 47.25,
+            "width": 3.21
+        },
+        "short_name": "LED-⇪"
+    },
+    "LED-⇭": {
+        "description": "Number Lock Light",
+        "leds": [
+            15
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 68.48,
+            "top": 47.25,
+            "width": 3.21
+        },
+        "short_name": "LED-⇭"
+    },
+    "LED-▣": {
+        "description": "Game Mode Light",
+        "leds": [
+            14
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 65.27,
+            "top": 47.25,
+            "width": 3.21
+        },
+        "short_name": "LED-▣"
+    },
+    "LED-⤓": {
+        "description": "Scroll Lock Light",
+        "leds": [
+            17
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 74.9,
+            "top": 47.25,
+            "width": 3.21
+        },
+        "short_name": "LED-⤓"
+    },
+    "M": {
+        "description": "m",
+        "leds": [
+            129
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 35.31,
+            "top": 61.75,
+            "width": 4.28
+        },
+        "short_name": "M"
+    },
+    "M1": {
+        "description": "Macro1",
+        "leds": [
+            43,
+            18
+        ],
+        "rectangle": {
+            "height": 11.88,
+            "left": 80.564,
+            "top": 1,
+            "width": 3.4
+        },
+        "short_name": "M1"
+    },
+    "M2": {
+        "description": "Macro2",
+        "leds": [
+            44,
+            19
+        ],
+        "rectangle": {
+            "height": 11.88,
+            "left": 83.85,
+            "top": 1,
+            "width": 3.4
+        },
+        "short_name": "M2"
+    },
+    "M3": {
+        "description": "Macro3",
+        "leds": [
+            45,
+            20
+        ],
+        "rectangle": {
+            "height": 11.88,
+            "left": 86.75,
+            "top": 1,
+            "width": 3.4
+        },
+        "short_name": "M3"
+    },
+    "N": {
+        "description": "n",
+        "leds": [
+            128
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 31.03,
+            "top": 61.75,
+            "width": 4.28
+        },
+        "short_name": "N"
+    },
+    "N--": {
+        "description": "subtract",
+        "leds": [
+            70
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 92.32,
+            "top": 20.25,
+            "width": 4.28
+        },
+        "short_name": "N--"
+    },
+    "N-.": {
+        "description": "decimal",
+        "leds": [
+            165
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 87.74,
+            "top": 75.25,
+            "width": 4.28
+        },
+        "short_name": "N-."
+    },
+    "N-*": {
+        "description": "multiply",
+        "leds": [
+            69
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 87.74,
+            "top": 20.25,
+            "width": 4.28
+        },
+        "short_name": "N-*"
+    },
+    "N-/": {
+        "description": "divide",
+        "leds": [
+            68
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 83.46,
+            "top": 20.25,
+            "width": 4.28
+        },
+        "short_name": "N-/"
+    },
+    "N-0": {
+        "description": "numpad0",
+        "leds": [
+            164
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 79.18,
+            "top": 75.25,
+            "width": 8.56
+        },
+        "short_name": "N-0"
+    },
+    "N-1": {
+        "description": "numpad1",
+        "leds": [
+            139
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 79.18,
+            "top": 61.75,
+            "width": 4.28
+        },
+        "short_name": "N-1"
+    },
+    "N-2": {
+        "description": "numpad2",
+        "leds": [
+            140
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 83.46,
+            "top": 61.75,
+            "width": 4.28
+        },
+        "short_name": "N-2"
+    },
+    "N-3": {
+        "description": "numpad3",
+        "leds": [
+            141
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 87.74,
+            "top": 61.75,
+            "width": 4.28
+        },
+        "short_name": "N-3"
+    },
+    "N-4": {
+        "description": "numpad4",
+        "leds": [
+            115
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 79.18,
+            "top": 47.25,
+            "width": 4.28
+        },
+        "short_name": "N-4"
+    },
+    "N-5": {
+        "description": "numpad5",
+        "leds": [
+            116
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 83.46,
+            "top": 47.25,
+            "width": 4.28
+        },
+        "short_name": "N-5"
+    },
+    "N-6": {
+        "description": "numpad6",
+        "leds": [
+            117
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 87.74,
+            "top": 47.25,
+            "width": 4.28
+        },
+        "short_name": "N-6"
+    },
+    "N-7": {
+        "description": "numpad7",
+        "leds": [
+            91
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 79.18,
+            "top": 33.75,
+            "width": 4.28
+        },
+        "short_name": "N-7"
+    },
+    "N-8": {
+        "description": "numpad8",
+        "leds": [
+            92
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 83.46,
+            "top": 33.75,
+            "width": 4.28
+        },
+        "short_name": "N-8"
+    },
+    "N-9": {
+        "description": "numpad9",
+        "leds": [
+            93
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 87.74,
+            "top": 33.75,
+            "width": 4.28
+        },
+        "short_name": "N-9"
+    },
+    "O": {
+        "description": "o",
+        "leds": [
+            82
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 40.66,
+            "top": 33.75,
+            "width": 4.28
+        },
+        "short_name": "O"
+    },
+    "P": {
+        "description": "p",
+        "leds": [
+            83
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 44.94,
+            "top": 33.75,
+            "width": 4.28
+        },
+        "short_name": "P"
+    },
+    "PAUSE": {
+        "description": "pause",
+        "leds": [
+            42
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 73.83,
+            "top": 0,
+            "width": 4.28
+        },
+        "short_name": "PAUSE"
+    },
+    "PG-DN": {
+        "description": "pageDown",
+        "leds": [
+            90
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 73.83,
+            "top": 33.75,
+            "width": 4.28
+        },
+        "short_name": "PG-DN"
+    },
+    "PG-UP": {
+        "description": "pageUp",
+        "leds": [
+            66
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 73.83,
+            "top": 20.25,
+            "width": 4.28
+        },
+        "short_name": "PG-UP"
+    },
+    "PRT-SC": {
+        "description": "printScreen",
+        "leds": [
+            40
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 65.27,
+            "top": 0,
+            "width": 4.28
+        },
+        "short_name": "PRT-SC"
+    },
+    "Q": {
+        "description": "q",
+        "leds": [
+            74
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 6.42,
+            "top": 33.75,
+            "width": 4.28
+        },
+        "short_name": "Q"
+    },
+    "Q-BTN": {
+        "description": "QKnob",
+        "leds": [
+            21,
+            46,
+            47,
+            22,
+            23
+        ],
+        "rectangle": {
+            "height": 23.625,
+            "left": 92.32,
+            "top": -7.5,
+            "width": 7.49
+        },
+        "short_name": "Q-BTN"
+    },
+    "R": {
+        "description": "r",
+        "leds": [
+            77
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 19.26,
+            "top": 33.75,
+            "width": 4.28
+        },
+        "short_name": "R"
+    },
+    "S": {
+        "description": "s",
+        "leds": [
+            100
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 11.77,
+            "top": 47.25,
+            "width": 4.28
+        },
+        "short_name": "S"
+    },
+    "SPACE": {
+        "description": "space",
+        "leds": [
+            151
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 16.50857143,
+            "top": 75.25,
+            "width": 25.68
+        },
+        "short_name": "SPACE"
+    },
+    "T": {
+        "description": "t",
+        "leds": [
+            78
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 23.54,
+            "top": 33.75,
+            "width": 4.28
+        },
+        "short_name": "T"
+    },
+    "U": {
+        "description": "u",
+        "leds": [
+            80
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 32.1,
+            "top": 33.75,
+            "width": 4.28
+        },
+        "short_name": "U"
+    },
+    "V": {
+        "description": "v",
+        "leds": [
+            126
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 22.47,
+            "top": 61.75,
+            "width": 4.28
+        },
+        "short_name": "V"
+    },
+    "W": {
+        "description": "w",
+        "leds": [
+            75
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 10.7,
+            "top": 33.75,
+            "width": 4.28
+        },
+        "short_name": "W"
+    },
+    "X": {
+        "description": "x",
+        "leds": [
+            124
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 13.91,
+            "top": 61.75,
+            "width": 4.28
+        },
+        "short_name": "X"
+    },
+    "Y": {
+        "description": "y",
+        "leds": [
+            79
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 27.82,
+            "top": 33.75,
+            "width": 4.28
+        },
+        "short_name": "Y"
+    },
+    "Z": {
+        "description": "z",
+        "leds": [
+            123
+        ],
+        "rectangle": {
+            "height": 13.5,
+            "left": 9.63,
+            "top": 61.75,
+            "width": 4.28
+        },
+        "short_name": "Z"
+    }
+}

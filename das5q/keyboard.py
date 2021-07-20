@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # SPDX-License-Identifier: FAFOL
 
+from typing import NamedTuple
 import hid
 
 from .packets import PACKET_LENGTH, AckPacket, Packet
@@ -20,6 +21,8 @@ class Keyboard:
     _usage = 165
     _interface_number = 2
     _sequence = 0
+
+    regions = {}
 
     def __init__(self, path):
         self._hid_path = path
@@ -101,3 +104,21 @@ class Keyboard:
         elif len(results) == 0:
             results = None
         return results
+
+class Rectangle(NamedTuple):
+    top:float
+    left:float
+    width:float
+    height:float
+
+class Region:
+    leds: list
+    description: str
+    short_name: str
+    rectangle: Rectangle
+
+    def __init__(self,short_name,description,rectangle,leds=None):
+        self.short_name = short_name
+        self.description = description
+        self.rectangle = rectangle
+        self.leds = leds
