@@ -151,7 +151,7 @@ class StatePacket(Packet):
     type = 0x28
     fields = [
         'color_channel_id',
-        'mystery_1'
+        'mystery_1',
         'key',
         'effect_id',
         'up_max_level',
