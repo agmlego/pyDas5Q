@@ -45,12 +45,31 @@ class Color:
         yield self.green
         yield self.blue
 
-    def for_led(self, index) -> tuple:
+    def for_led(self, id) -> tuple[int, int, int]:
         '''Return the values in LED-specific channel ordering
 
         Keyword Arguments:
-            index =-- numeric index of the LED in question
+            id -- numeric index of the LED in question
 
         '''
-        # FIXME: Maybe actually do what the docstring says....
-        return (self.red, self.green, self.blue)
+
+        if (14 <= id <= 17)\
+                or (34 <= id <= 40)\
+                or (58 <= id <= 63)\
+                or (81 <= id <= 90)\
+                or (106 <= id <= 111)\
+                or (130 <= id <= 135)\
+                or (155 <= id <= 160):
+            return (self.blue, self.red, self.green)
+        elif (18 <= id <= 23)\
+                or (41 <= id <= 47)\
+                or (64 <= id <= 71)\
+                or (91 <= id <= 95)\
+                or (115 <= id <= 119)\
+                or (137 <= id <= 143)\
+                or (161 <= id <= 167)\
+                or (191 == id)\
+                or (193 <= id <= 215):
+            return (self.green, self.blue, self.red)
+        else:
+            return (self.red, self.green, self.blue)
